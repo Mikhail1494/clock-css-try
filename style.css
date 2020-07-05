@@ -10,8 +10,23 @@ body {
 body {
     display: grid;
     place-items: center;
-    background: #dde1e7;
     text-align: center;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to top,
+        #2c3e50,
+        #bdc3c7
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to top,
+        #2c3e50,
+        #bdc3c7
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.text {
+    font-size: 30px;
+    text-shadow: 3px 3px grey;
+    font-family: "Dancing Script", cursive;
 }
 .clock {
     background: #2980b9; /* fallback for old browsers */
@@ -63,9 +78,21 @@ body {
     content: "";
     height: 320px;
     width: 320px;
-    background: #dde1e7;
     border-radius: 50%;
     box-shadow: -1px -1px 5px #ffffff73, 1px 1px 3px rgba(94, 104, 121, 0.288);
+    background: #9cecfb; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to top,
+        #0052d4,
+        #65c7f7,
+        #9cecfb
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to top,
+        #0052d4,
+        #65c7f7,
+        #9cecfb
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .clock .center-nut {
     height: 15px;
@@ -86,8 +113,7 @@ body {
 .indicators div {
     position: absolute;
     width: 2px;
-    height: 5px;
-    background: #000000;
+    height: 0px;
 }
 .indicators div:nth-child(1) {
     transform: rotate(30deg) translateY(-200px);
@@ -164,16 +190,36 @@ body {
     content: "";
     height: 210px;
     width: 3px;
-    background: #3498db;
+    background: #4e54c8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to bottom,
+        #8f94fb,
+        #4e54c8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #8f94fb,
+        #4e54c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .sec:after {
     position: absolute;
     content: "";
     height: 35px;
     width: 7px;
-    background: #3498db;
     top: 190px;
     border-radius: 5px;
+    background: #4e54c8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to bottom,
+        #8f94fb,
+        #4e54c8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #8f94fb,
+        #4e54c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .min:before {
     position: absolute;
