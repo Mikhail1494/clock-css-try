@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: rgb(77, 103, 112);
+    text-align: center;
+}
+.clock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.clock:before {
+    position: absolute;
+    content: "";
+    height: 220px;
+    width: 220px;
+    background-color: lightblue;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.clock:after {
+    position: absolute;
+    content: "";
+    height: 120px;
+    width: 120px;
+    background-color: lightblue;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 5px #ffffff73,
+        inset 1px 1px 3px rgba(94, 104, 121, 0.288);
+}
+.clock .center-nut {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+}
+.clock .center-nut2 {
+    height: 9px;
+    width: 9px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 15;
+    position: absolute;
+}
+.indicator div {
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    background: #404040;
+}
+.indicator div:nth-child(1) {
+    transform: translateY();
+}
